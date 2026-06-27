@@ -1,0 +1,14 @@
+php artisan make:migration create_task_schedule_type_enum
+php artisan make:migration create_task_occurrence_status_enum
+php artisan make:migration create_task_action_type_enum
+php artisan make:migration create_occurrence_override_type_enum
+
+php artisan make:migration create_tasks_table --create=tasks
+php artisan make:migration create_task_schedules_table --create=task_schedules
+php artisan make:migration create_task_schedule_times_table --create=task_schedule_times
+php artisan make:migration create_task_schedule_specific_dates_table --create=task_schedule_specific_dates
+php artisan make:migration create_task_schedule_exceptions_table --create=task_schedule_exceptions
+php artisan make:migration create_task_schedule_overrides_table --create=task_schedule_overrides
+php artisan make:migration create_task_occurrences_table --create=task_occurrences
+php artisan make:migration create_task_occurrence_actions_table --create=task_occurrence_actions
+php artisan make:migration create_task_logs_table --create=task_logs
